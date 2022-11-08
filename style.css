@@ -1,0 +1,52 @@
+.element {
+  -webkit-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .loading-bar {
+  display: flex;
+  height: 40px;
+  width: 100%;
+  max-width: 520px;
+  box-shadow: inset 0px 0px 0px 1px #ffffff;
+  background-color: #9863b6;
+  border-radius: 50px;
+  overflow: hidden;
+  
+}
+@-webkit-keyframes progress-animation {
+  0% {
+    width: 55%;
+  }
+
+  50% {
+    width: 80%;
+  }
+
+}
+.container .loading-bar .progress-bar {
+  display: flex;
+  height: 100%;
+  width: 80%;
+  background: #5b1683;
+  -webkit-animation: progress-animation 5s ease-in-out;
+          animation: progress-animation 5s ease-in-out;
+}
+
+h3 {
+  margin-top: -47px;
+  font-family: 'Work Sans', sans-serif;
+  color: #f5f5f5;
+}
+
+h5 {
+  font-family: 'Roboto', sans-serif;;
+}
+
